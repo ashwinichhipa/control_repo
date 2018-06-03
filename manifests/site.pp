@@ -14,6 +14,10 @@ node 'master.puppet.vm' {
    }
 }
 
+node 'minetest.puppet.vm' {
+  include role::minecraft_server
+}
+
 node /^wev/ {
   include role::app_server
 }
